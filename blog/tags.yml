@@ -1,0 +1,14 @@
+food:
+  label: Food
+  permalink: /food
+  description: Food
+
+travel:
+  label: Travel
+  permalink: /travel
+  description: Travel
+  
+work:
+  label: Work
+  permalink: /work
+  description: Work
