@@ -3,8 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: ['main']
-  pull_request:
-    branches: ['main']
+  workflow_dispatch:  # Allows manual trigger
 
 permissions:
   contents: read
@@ -12,31 +11,16 @@ permissions:
   id-token: write
 
 jobs:
-  test-deploy:
-    if: github.event_name == 'pull_request'
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: npm
-      - name: Install dependencies
-        run: npm ci
-      - name: Test build
-        run: npm run build
-
-  build:
-    if: github.ref == 'refs/heads/main'
-    runs-on: ubuntu-latest
-    needs: test-deploy
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - uses: actions/setup-node@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
@@ -44,19 +28,10 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
-      - name: Upload artifact
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: build
-
-  deploy:
-    if: github.ref == 'refs/heads/main'
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
+          path: build/
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
