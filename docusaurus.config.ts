@@ -78,7 +78,7 @@ const config: Config = {
       },
       items: [
         {to: '/blog', label: 'Blog', position: 'left'},
-        {to: '/gallery', label: 'Gallery', position: 'left'}
+        /*{to: '/gallery', label: 'Gallery', position: 'left'},*/
       ],
     },
     footer: {
