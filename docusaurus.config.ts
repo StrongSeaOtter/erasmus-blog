@@ -44,14 +44,12 @@ const config: Config = {
         docs: false,
         blog: {
           showReadingTime: true,
+          blogSidebarCount: 'ALL',
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,
           },
           // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -71,10 +69,10 @@ const config: Config = {
       disableSwitch: true,
     },
     navbar: {
-      title: 'StrongOtter',
+      title: 'Home',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/erasmus.svg',
       },
       items: [
         {to: '/blog', label: 'Blog', position: 'left'},

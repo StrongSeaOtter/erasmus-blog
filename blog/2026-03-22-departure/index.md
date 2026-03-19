@@ -1,9 +1,8 @@
 ---
-slug: week2
-title: Week 2
+slug: departure
+title: Departure
 authors: otti
 tags: [Food, Travel, Work]
-unlisted: true
 ---
 
 

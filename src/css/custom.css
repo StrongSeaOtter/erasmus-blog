@@ -46,3 +46,7 @@ h1 {
   font-family: 'RumbleBrave', sans-serif;
   font-size: 5rem;
 }
+
+.navbar__logo {
+  margin-bottom: 0.5rem;
+}

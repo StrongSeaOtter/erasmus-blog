@@ -1,6 +1,6 @@
 ---
-slug: week2
-title: Week 2
+slug: week8
+title: Week 8
 authors: otti
 tags: [Food, Travel, Work]
 unlisted: true
