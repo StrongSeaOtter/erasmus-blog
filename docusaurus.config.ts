@@ -1,5 +1,5 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
@@ -18,7 +18,7 @@ const config: Config = {
   url: 'https://erasmus.strongotter.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -71,8 +71,8 @@ const config: Config = {
     navbar: {
       title: 'Home',
       items: [
-        {to: '/blog', label: 'Blog', position: 'left'},
-        {to: '/gallery', label: 'Gallery', position: 'left'}
+        { to: '/blog', label: 'Blog', position: 'left' },
+        { to: '/gallery', label: 'Gallery', position: 'left' }
       ],
     },
     footer: {
