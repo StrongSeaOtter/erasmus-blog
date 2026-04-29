@@ -20,7 +20,7 @@ I spent a day in Freiburg, mainly to try different Schwarzwälder Kirschtorte.
 The Schwarzwälder Kirschtorte here is quite iconic: the portion is large, the cream is a bit rough and not very smooth, the cake itself is not very moist, and the cherries do not have a strong alcohol taste.  
 I came for the Schwarzwälder Kirschtorte, but in the end I discovered that the passion fruit mousse cake was actually pretty decent.
 
-![Kolben Café](/img/departure/kolben-cafe.jpg)
+![Kolben Café](/img/departure/kolben-cafe.JPG)
 *Blackforest cherrycake and passion fruit mousse cake*
 
 Compared to Kolben Café, the Schwarzwälder Kirschtorte at Café Schmidt is different.  
@@ -87,5 +87,5 @@ This flavor *Fleur d'oranger éclats de pistache* even won the World Gelato comp
 
 Next to the Marseille Cathedral you can also find one of the best spots in the city to watch the sunset.
 
-![Sunset in Marseille](/img/departure/sunset-in-marseille.jpg)
+![Sunset in Marseille](/img/departure/sunset-in-marseille.JPG)
 *Sunset in Marseille*
