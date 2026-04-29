@@ -3,7 +3,7 @@ slug: week1
 title: "Week 1 – Arriving in Perpignan"
 authors: otti
 description: "A relaxed first week in Perpignan with paperwork, language lessons, and first impressions of the city and local culture."
-tags: [Culture, Travel, Work]
+tags: [culture, travel, work]
 ---
 
 

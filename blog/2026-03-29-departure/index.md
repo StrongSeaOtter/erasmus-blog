@@ -2,7 +2,7 @@
 slug: departure
 title: Departure – The Road to France
 authors: otti
-tags: [Food, Travel, Culture]
+tags: [food, travel, culture]
 ---
 
 

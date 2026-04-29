@@ -2,7 +2,7 @@
 slug: week2
 title: Week 2 - The Workweek Starts Again
 authors: otti
-tags: [Culture, Sport, Work]
+tags: [culture, sport, work]
 unlisted: true
 ---
 
