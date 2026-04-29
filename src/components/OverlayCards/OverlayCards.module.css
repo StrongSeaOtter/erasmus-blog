@@ -1,0 +1,140 @@
+.overlayWrapper {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.cards {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardLink {
+  display: block;
+  width: min(26vw, 340px);
+  border-radius: 14px;
+  overflow: hidden;
+  text-decoration: none;
+  flex-shrink: 0;
+  transition: transform 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  z-index: 1;
+}
+
+.cardLink:first-child {
+  transform: rotate(-6deg) translateX(60px);
+}
+
+.cardLink:last-child {
+  transform: rotate(6deg) translateX(-60px);
+}
+
+.cardLink:first-child:hover {
+  transform: rotate(0deg) translateX(120px) scale(1.05);
+  z-index: 2;
+}
+
+.cardLink:last-child:hover {
+  transform: rotate(0deg) translateX(-120px) scale(1.05);
+  z-index: 2;
+}
+
+.cards:has(.cardLink:first-child:hover) .cardLink:last-child {
+  transform: rotate(10deg) translateX(80px) scale(0.92);
+}
+
+.cards:has(.cardLink:last-child:hover) .cardLink:first-child {
+  transform: rotate(-10deg) translateX(-80px) scale(0.92);
+}
+
+.card {
+  width: 100%;
+  height: clamp(320px, 65vh, 580px);
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 2rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  transition: background 0.4s ease;
+}
+
+.cardLink:hover .card::before {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 55%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
+}
+
+.cardLabel {
+  position: relative;
+  color: #fff;
+  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  text-align: center;
+  z-index: 2;
+}
+
+@media (max-width: 640px) {
+  .cards {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .cardLink {
+    width: min(70vw, 280px);
+  }
+
+  .cardLink:first-child {
+    transform: rotate(-4deg) translateY(40px);
+  }
+
+  .cardLink:last-child {
+    transform: rotate(4deg) translateY(-40px);
+  }
+
+  .cardLink:first-child:hover {
+    transform: rotate(0deg) translateY(80px) scale(1.04);
+    z-index: 2;
+  }
+
+  .cardLink:last-child:hover {
+    transform: rotate(0deg) translateY(-80px) scale(1.04);
+    z-index: 2;
+  }
+
+  .cards:has(.cardLink:first-child:hover) .cardLink:last-child {
+    transform: rotate(7deg) translateY(60px) scale(0.93);
+  }
+
+  .cards:has(.cardLink:last-child:hover) .cardLink:first-child {
+    transform: rotate(-7deg) translateY(-60px) scale(0.93);
+  }
+
+  .card {
+    height: clamp(240px, 45vh, 380px);
+  }
+}

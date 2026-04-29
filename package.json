@@ -12,6 +12,7 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
+    "gallery": "node scripts/generate-gallery.js",
     "typecheck": "tsc"
   },
   "dependencies": {
@@ -21,13 +22,17 @@
     "clsx": "^2.0.0",
     "prism-react-renderer": "^2.3.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-photo-album": "^3.6.0",
+    "typewriter-effect": "^2.22.0",
+    "yet-another-react-lightbox": "^3.29.1"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.9.2",
     "@docusaurus/tsconfig": "3.9.2",
     "@docusaurus/types": "3.9.2",
     "gh-pages": "^6.3.0",
+    "image-size": "^2.0.2",
     "typescript": "~5.6.2"
   },
   "browserslist": {

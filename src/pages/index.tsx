@@ -1,44 +1,22 @@
 import type {ReactNode} from 'react';
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import Heading from '@theme/Heading';
+import Head from '@docusaurus/Head';
+import HeroLanding from '@site/src/components/HeroLanding/HeroLanding';
+import CustomCursor from '@site/src/components/CustomCursor/CustomCursor';
 
-import styles from './index.module.css';
-
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+/**
+ * The landing page renders without Docusaurus Layout (no navbar / footer)
+ * for a cinematic, full-screen experience.
+ * Navbar + footer are only visible on /blog and /gallery.
+ */
+export default function LandingPage(): ReactNode {
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/blog">
-            Weekly BLOG 📝
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
-}
-
-export default function Home(): ReactNode {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
-    </Layout>
+    <>
+      <Head>
+        <title>Otti in Perpignan — Erasmus+</title>
+        <meta name="description" content="Follow my Erasmus+ internship journey in Perpignan, France." />
+      </Head>
+      <CustomCursor />
+      <HeroLanding />
+    </>
   );
 }

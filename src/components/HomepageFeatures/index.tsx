@@ -5,7 +5,8 @@ import styles from './styles.module.css';
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  Svg?: React.ComponentType<React.ComponentProps<'svg'>>;
+  imageSrc?: string;
   description: ReactNode;
 };
 
@@ -32,7 +33,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Life in the South',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    imageSrc: '/img/beach.jpeg',
     description: (
       <>
         Discover daily life between the Mediterranean and the Pyrenees:
@@ -42,11 +43,15 @@ const FeatureList: FeatureItem[] = [
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, Svg, imageSrc, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        {Svg ? (
+          <Svg className={styles.featureSvg} role="img" />
+        ) : (
+          <img src={imageSrc} className={styles.featureSvg} alt={title} />
+        )}
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>

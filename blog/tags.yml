@@ -1,14 +1,29 @@
 food:
-  label: Food
+  label: Food & Cuisine
   permalink: /food
-  description: Food
+  description: Stories about local cuisine, restaurants, desserts, and everything I eat during my stay.
 
 travel:
-  label: Travel
+  label: Travel & Places
   permalink: /travel
-  description: Travel
-  
+  description: Road trips, weekend getaways, city explorations, and impressions of new locations.
+
 work:
-  label: Work
+  label: Work & Internship
   permalink: /work
-  description: Work
+  description: Experiences from my internship, tasks, projects, and thoughts about working abroad.
+
+culture:
+  label: Culture & Traditions
+  permalink: /culture
+  description: Local customs, festivals, history, and cultural observations in my host country.
+
+lifestyle:
+  label: Daily Life
+  permalink: /lifestyle
+  description: Everyday routines, accommodation, studying, and how I organize my life abroad.
+
+sports:
+  label: Sports & Activities
+  permalink: /sports
+  description: Hiking, sports, outdoor activities, and how I stay active during my stay.

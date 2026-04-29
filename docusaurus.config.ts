@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Otti in Perpignan',
   tagline: 'Erasmus+ Internship',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/erasmus.webp',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -70,13 +70,9 @@ const config: Config = {
     },
     navbar: {
       title: 'Home',
-      logo: {
-        alt: 'My Site Logo',
-        src: 'img/erasmus.svg',
-      },
       items: [
         {to: '/blog', label: 'Blog', position: 'left'},
-        /*{to: '/gallery', label: 'Gallery', position: 'left'},*/
+        {to: '/gallery', label: 'Gallery', position: 'left'}
       ],
     },
     footer: {
