@@ -18,13 +18,10 @@ export default function GalleryPage() {
 
   return (
     <Layout title="Gallery" description="Erasmus Photo Gallery">
-      <div style={{ padding: '2rem' }}>
-        <h1>Gallery</h1>
+      <div style={{ padding: '1rem' }}>
         <MasonryPhotoAlbum
           photos={photos}
           onClick={({ index }) => setIndex(index)}
-          columns={6}
-          spacing={8}
         />
         <Lightbox
           slides={photos.map(p => ({ src: p.src, title: p.title, description: p.description }))}

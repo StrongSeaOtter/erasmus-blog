@@ -16,13 +16,8 @@ export default function HeroLanding({ onEnter }: HeroLandingProps): React.ReactN
   const cardsTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
-    // Trigger entrance animation on mount
     setHasAnimated(true);
-
-    // Prevent scrolling while hero is displayed
     document.body.style.overflow = 'hidden';
-
-    // Hide default cursor on landing page
     document.documentElement.style.cursor = 'none';
 
     return () => {
@@ -32,20 +27,30 @@ export default function HeroLanding({ onEnter }: HeroLandingProps): React.ReactN
     };
   }, []);
 
-  // After typewriter finishes, wait briefly then show the cards
   useEffect(() => {
-    if (typewriterDone) {
+    if (typewriterDone && !showCards) {
       cardsTimerRef.current = setTimeout(() => {
         setShowCards(true);
       }, 800);
     }
+
     return () => {
       if (cardsTimerRef.current) clearTimeout(cardsTimerRef.current);
     };
-  }, [typewriterDone]);
+  }, [typewriterDone, showCards]);
 
   const handleMouseEnter = () => setIsHovering(true);
   const handleMouseLeave = () => setIsHovering(false);
+
+  const handleClick = () => {
+    if (cardsTimerRef.current) {
+      clearTimeout(cardsTimerRef.current);
+      cardsTimerRef.current = null;
+    }
+
+    setShowCards(true);
+    onEnter?.();
+  };
 
   return (
     <section
@@ -53,10 +58,10 @@ export default function HeroLanding({ onEnter }: HeroLandingProps): React.ReactN
       className={styles.heroSection}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      onClick={handleClick}
       role="region"
       aria-label="Hero landing section"
     >
-      {/* Typewriter title — always visible, centred */}
       <div className={`${styles.content} ${hasAnimated ? styles.animated : ''}`}>
         <h1 className={styles.heroTitle}>
           <Typewriter
@@ -77,22 +82,15 @@ export default function HeroLanding({ onEnter }: HeroLandingProps): React.ReactN
         </h1>
       </div>
 
-      {/* OverlayCards fade in after typewriter finishes */}
-      <div
-        className={`${styles.cardsWrapper} ${showCards ? styles.cardsVisible : ''}`}
-      >
+      <div className={`${styles.cardsWrapper} ${showCards ? styles.cardsVisible : ''}`}>
         <OverlayCards />
       </div>
 
-      {/* Floating cursor label */}
       {isHovering && <FloatingLabel />}
     </section>
   );
 }
 
-/**
- * Floating label with rolling text effect
- */
 function FloatingLabel(): React.ReactNode {
   const labelRef = useRef<HTMLDivElement>(null);
 
@@ -114,7 +112,7 @@ function FloatingLabel(): React.ReactNode {
     <div ref={labelRef} className={styles.floatingLabel}>
       <div className={styles.labelContent}>
         <span className={styles.rollingText}>
-          Enter • Explore • Discover •{' '}
+          Enter • Explore • Discover • Enter • Explore • Discover • Enter • Explore • Discover •
         </span>
       </div>
     </div>

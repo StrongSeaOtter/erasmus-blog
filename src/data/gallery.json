@@ -1,86 +1,155 @@
 [
   {
-    "src": "/img/departure/kolben-cafe.JPG",
-    "width": 4032,
-    "height": 3024,
+    "originalSrc": "/img/departure/kolben-cafe-1200.jpg",
+    "src": "/img/departure/kolben-cafe-1200.jpg",
+    "width": 1200,
+    "height": 900,
     "title": "Kolben Café",
-    "description": "Blackforest cherrycake and passion fruit mousse cake"
+    "description": "Blackforest cherrycake and passion fruit mousse cake",
+    "full": "/img/departure/kolben-cafe-1200.jpg"
   },
   {
-    "src": "/img/departure/schmidt-cafe.jpg",
-    "width": 8064,
-    "height": 6048,
-    "title": "schmidt cafe",
-    "description": "Another Blackforest cherrycake and cheese cake"
+    "originalSrc": "/img/departure/schmidt-cafe-1200.jpg",
+    "src": "/img/departure/schmidt-cafe-1200.jpg",
+    "width": 1200,
+    "height": 900,
+    "title": "Café Schmidt",
+    "description": "Another Blackforest cherrycake and cheese cake",
+    "full": "/img/departure/schmidt-cafe-1200.jpg"
   },
   {
-    "src": "/img/departure/nett-hier-sticker.jpg",
-    "width": 8064,
-    "height": 6048,
-    "title": "nett hier sticker",
-    "description": "Well since you are already in Baden‑Württemberg"
+    "originalSrc": "/img/departure/nett-hier-sticker-1200.jpg",
+    "src": "/img/departure/nett-hier-sticker-1200.jpg",
+    "width": 1200,
+    "height": 1600,
+    "title": "Nett hier Sticker",
+    "description": "Well since you are already in Baden‑Württemberg",
+    "full": "/img/departure/nett-hier-sticker-1200.jpg"
   },
   {
-    "src": "/img/departure/every-european-city.jpeg",
-    "width": 1402,
-    "height": 1172,
-    "title": "every european city",
-    "description": "Pic of a map of every European city"
+    "originalSrc": "/img/departure/every-european-city-1200.jpeg",
+    "src": "/img/departure/every-european-city-1200.jpeg",
+    "width": 1200,
+    "height": 1003,
+    "title": "Pic of a map of every European city",
+    "description": "Pic of a map of every European city",
+    "full": "/img/departure/every-european-city-1200.jpeg"
   },
   {
-    "src": "/img/departure/lyon-cathedral.jpg",
-    "width": 4158,
-    "height": 3120,
-    "title": "lyon cathedral",
-    "description": "You have to go visit that cathedral of each european city"
+    "originalSrc": "/img/departure/lyon-cathedral-1200.jpg",
+    "src": "/img/departure/lyon-cathedral-1200.jpg",
+    "width": 1200,
+    "height": 1599,
+    "title": "Basilica of Notre Dame of Fourvière",
+    "description": "You have to go visit that cathedral of each european city",
+    "full": "/img/departure/lyon-cathedral-1200.jpg"
   },
   {
-    "src": "/img/departure/lyon-bookstore.jpg",
-    "width": 8064,
-    "height": 6048,
-    "title": "lyon bookstore",
-    "description": "Here is the famous entrance that made with arch of books"
+    "originalSrc": "/img/departure/lyon-bookstore-1200.jpg",
+    "src": "/img/departure/lyon-bookstore-1200.jpg",
+    "width": 1200,
+    "height": 1600,
+    "title": "Most beautiful bookstore in Lyon",
+    "description": "Here is the famous entrance that made with arch of books",
+    "full": "/img/departure/lyon-bookstore-1200.jpg"
   },
   {
-    "src": "/img/departure/french-dessert.jpg",
-    "width": 6048,
-    "height": 6393,
-    "title": "french dessert",
-    "description": "Iced chestnut soufflé and crème brûlée with vanilla"
+    "originalSrc": "/img/departure/french-dessert-1200.jpg",
+    "src": "/img/departure/french-dessert-1200.jpg",
+    "width": 1135,
+    "height": 1200,
+    "title": "Iced chestnut soufflé and crème brûlée with vanilla",
+    "description": "Iced chestnut soufflé and crème brûlée with vanilla",
+    "full": "/img/departure/french-dessert-1200.jpg"
   },
   {
-    "src": "/img/departure/old-port.jpg",
-    "width": 8064,
-    "height": 6048,
-    "title": "old port",
-    "description": "Blues moments at the Old Port"
+    "originalSrc": "/img/departure/old-port-1200.jpg",
+    "src": "/img/departure/old-port-1200.jpg",
+    "width": 1200,
+    "height": 900,
+    "title": "Evening by the Old Port",
+    "description": "Blues moments at the Old Port",
+    "full": "/img/departure/old-port-1200.jpg"
   },
   {
+    "originalSrc": "/img/departure/marseille-sea.gif",
     "src": "/img/departure/marseille-sea.gif",
     "width": 960,
     "height": 720,
     "title": "Big Waves in Marseille",
-    "description": "Too bad its still too cold to go swimming in the sea"
+    "description": "Too bad its still too cold to go swimming in the sea",
+    "full": "/img/departure/marseille-sea.gif"
   },
   {
-    "src": "/img/departure/ice-cream.jpg",
-    "width": 8064,
-    "height": 6048,
-    "title": "ice cream",
-    "description": "Truly is the best ice cream that I have ever had"
+    "originalSrc": "/img/departure/ice-cream-1200.jpg",
+    "src": "/img/departure/ice-cream-1200.jpg",
+    "width": 1200,
+    "height": 1600,
+    "title": "Best Ice Cream",
+    "description": "Truly is the best ice cream that I have ever had",
+    "full": "/img/departure/ice-cream-1200.jpg"
   },
   {
-    "src": "/img/departure/sunset-in-marseille.JPG",
-    "width": 4032,
-    "height": 3024,
+    "originalSrc": "/img/departure/sunset-marseille-1200.jpg",
+    "src": "/img/departure/sunset-marseille-1200.jpg",
+    "width": 1200,
+    "height": 900,
     "title": "Sunset in Marseille",
-    "description": "Sunset in Marseille"
+    "description": "Sunset in Marseille",
+    "full": "/img/departure/sunset-marseille-1200.jpg"
   },
   {
+    "originalSrc": "/img/week1/at-beach.gif",
     "src": "/img/week1/at-beach.gif",
     "width": 960,
     "height": 720,
     "title": "Beautifull Color",
-    "description": "Isn't it gorgeous here?"
+    "description": "Isn't it gorgeous here?",
+    "full": "/img/week1/at-beach.gif"
+  },
+  {
+    "originalSrc": "/img/week2/sunset-at-the-beach.gif",
+    "src": "/img/week2/sunset-at-the-beach.gif",
+    "width": 960,
+    "height": 720,
+    "title": "Sunset at the Beach",
+    "description": "Sunset by the sea is really calming",
+    "full": "/img/week2/sunset-at-the-beach.gif"
+  },
+  {
+    "originalSrc": "/img/week2/seafood-and-fish-1200.jpg",
+    "src": "/img/week2/seafood-and-fish-1200.jpg",
+    "width": 1200,
+    "height": 900,
+    "title": "Seafood and Fish",
+    "description": "You can use most kinds of fish for this recipe",
+    "full": "/img/week2/seafood-and-fish-1200.jpg"
+  },
+  {
+    "originalSrc": "/img/week2/all-ingredients-1200.jpg",
+    "src": "/img/week2/all-ingredients-1200.jpg",
+    "width": 1200,
+    "height": 900,
+    "title": "All Ingredients",
+    "description": "Nice and prepped — ready to cook",
+    "full": "/img/week2/all-ingredients-1200.jpg"
+  },
+  {
+    "originalSrc": "/img/week2/bouillabaisse-1200.jpg",
+    "src": "/img/week2/bouillabaisse-1200.jpg",
+    "width": 1200,
+    "height": 900,
+    "title": "Restaurant level of bouillabaisse",
+    "description": "Voilà, about 80€ worth of restaurant-level bouillabaisse for roughly 8 portions (okay, it took around 3 hours, but totally worth it).",
+    "full": "/img/week2/bouillabaisse-1200.jpg"
+  },
+  {
+    "originalSrc": "/img/week2/serve-with-baguette-1200.jpg",
+    "src": "/img/week2/serve-with-baguette-1200.jpg",
+    "width": 1200,
+    "height": 900,
+    "title": "Bouillabaisse served with rouille and baguette",
+    "description": "Rouille is a saffron- and chili-flavored mayonnaise, which is traditionally served with bouillabaisse. It is used to flavor the soup and add richness and depth of flavor.",
+    "full": "/img/week2/serve-with-baguette-1200.jpg"
   }
 ]

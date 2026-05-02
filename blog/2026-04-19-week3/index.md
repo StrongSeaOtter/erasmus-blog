@@ -2,7 +2,7 @@
 slug: week3
 title: Week 3 - Juggling Projects, AI, and Life by the Sea
 authors: otti
-tags: [Food, Travel, Work]
+tags: [lifestyle, culture, work]
 unlisted: true
 ---
 
@@ -28,8 +28,13 @@ Over the weekend, the sunny weather made for a perfect afternoon at the beach. I
 
 One great thing about this area is that Le Barcarès isn’t too crowded this time of year. The water is also very shallow for about 50 meters from the shore, making it quite safe for families and children.
 
+There was also a huge biker event at the beach, complete with motor stunt shows. I checked out some really cool vintage cars, as well as lots of Harley-Davidson and Indian motorcycles.
+
 ## Trip to Collioure
 
 On Sunday, I drove to Collioure, which was voted one of the most beautiful towns in France in 2024. It’s a charming tourist destination with colorful houses, and it has inspired many artists — including Matisse — to create beautiful works of art. The town is also famous for its anchovies, so I bought some as souvenirs and plan to use them in a few delicious meals.
 
 A funny moment: in the three hours I spent there, I saw at least seven different beagles. It honestly made me wonder if there was some kind of beagle gathering happening nearby.
+
+## Cultural Differences
+And finally — a funny cultural detail: the proper way to carry your baguette in France 😄

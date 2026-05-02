@@ -10,9 +10,12 @@
 
 .cards {
   display: flex;
-  gap: 80px;
+  flex-direction: row;
+  gap: 40px;
   align-items: center;
   justify-content: center;
+  padding: 0 16px;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .cardLink {
@@ -22,8 +25,9 @@
   overflow: hidden;
   text-decoration: none;
   flex-shrink: 0;
-  transition: transform 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: transform 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94), z-index 0.45s;
   z-index: 1;
+  cursor: pointer;
 }
 
 .cardLink:first-child {
@@ -34,6 +38,13 @@
   transform: rotate(6deg) translateX(-60px);
 }
 
+/* Expanded state: card moves to center */
+.cardLink.expanded {
+  transform: rotate(0deg) translateX(0) scale(1.1);
+  z-index: 3;
+}
+
+/* Default hover states */
 .cardLink:first-child:hover {
   transform: rotate(0deg) translateX(120px) scale(1.05);
   z-index: 2;
@@ -44,12 +55,17 @@
   z-index: 2;
 }
 
+.cardLink:hover .card::before {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+/* Interaction cues between cards */
 .cards:has(.cardLink:first-child:hover) .cardLink:last-child {
   transform: rotate(10deg) translateX(80px) scale(0.92);
 }
 
 .cards:has(.cardLink:last-child:hover) .cardLink:first-child {
-  transform: rotate(-10deg) translateX(-80px) scale(0.92);
+  transform: rotate(-10deg) translateX(-120px) scale(0.92);
 }
 
 .card {
@@ -73,10 +89,6 @@
   transition: background 0.4s ease;
 }
 
-.cardLink:hover .card::before {
-  background: rgba(0, 0, 0, 0.15);
-}
-
 .card::after {
   content: '';
   position: absolute;
@@ -98,43 +110,68 @@
   z-index: 2;
 }
 
+/* Mobile: bigger cards side-by-side */
 @media (max-width: 640px) {
   .cards {
-    flex-direction: column;
-    gap: 60px;
+    flex-direction: row;
+    gap: 16px;
+    padding: 0 16px;
   }
 
   .cardLink {
-    width: min(70vw, 280px);
+    /* Bigger: 48vw instead of 42vw, 180px instead of 150px */
+    width: min(48vw, 180px);
+    flex-shrink: 1;
   }
 
   .cardLink:first-child {
-    transform: rotate(-4deg) translateY(40px);
+    transform: rotate(-4deg) translateX(20px);
   }
 
   .cardLink:last-child {
-    transform: rotate(4deg) translateY(-40px);
+    transform: rotate(4deg) translateX(-20px);
+  }
+
+  .cardLink.expanded {
+    transform: rotate(0deg) translateX(0) scale(1.2);
+    z-index: 3;
   }
 
   .cardLink:first-child:hover {
-    transform: rotate(0deg) translateY(80px) scale(1.04);
+    transform: rotate(0deg) translateX(40px) scale(1.04);
     z-index: 2;
   }
 
   .cardLink:last-child:hover {
-    transform: rotate(0deg) translateY(-80px) scale(1.04);
+    transform: rotate(0deg) translateX(-40px) scale(1.04);
     z-index: 2;
   }
 
   .cards:has(.cardLink:first-child:hover) .cardLink:last-child {
-    transform: rotate(7deg) translateY(60px) scale(0.93);
+    transform: rotate(7deg) translateX(30px) scale(0.93);
   }
 
   .cards:has(.cardLink:last-child:hover) .cardLink:first-child {
-    transform: rotate(-7deg) translateY(-60px) scale(0.93);
+    transform: rotate(-7deg) translateX(-30px) scale(0.93);
   }
 
   .card {
-    height: clamp(240px, 45vh, 380px);
+    /* Bigger height: 260px instead of 200px */
+    height: clamp(260px, 45vh, 380px);
+  }
+
+  .cardLabel {
+    font-size: clamp(1.1rem, 4vw, 1.4rem);
+    letter-spacing: 0.15em;
+  }
+}
+
+/* Accessibility: reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  .cardLink {
+    transition: none;
+  }
+  .cards {
+    transition: none;
   }
 }

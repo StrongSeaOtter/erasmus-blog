@@ -21,11 +21,11 @@
 .content {
   position: relative;
   text-align: center;
-  z-index: 1;          /* text sits BEHIND the cards */
+  z-index: 1;
   opacity: 0;
   transform: scale(0.95);
   letter-spacing: -0.05em;
-  pointer-events: none; /* clicks pass through to cards when visible */
+  pointer-events: none;
 }
 
 .content.animated {
@@ -45,18 +45,15 @@
   max-width: 95vw;
 }
 
-/* Hero entrance animation */
 @keyframes heroFadeInScale {
   0% {
     opacity: 0;
     transform: scale(0.95);
     letter-spacing: -0.05em;
   }
-
   50% {
     opacity: 0.7;
   }
-
   100% {
     opacity: 1;
     transform: scale(1);
@@ -68,19 +65,16 @@
   0% {
     letter-spacing: -0.05em;
   }
-
   100% {
     letter-spacing: 0.02em;
   }
 }
 
-/* Typewriter cursor styling */
 .typewriterCursor {
   color: #ffffff !important;
   font-weight: 700;
 }
 
-/* Cards overlay — hidden until typewriter finishes, sits ON TOP of text */
 .cardsWrapper {
   z-index: 2;
   position: absolute;
@@ -99,13 +93,23 @@
 }
 
 @keyframes cardPopOut {
-  0%   { opacity: 0; transform: scale(0.55); }
-  60%  { opacity: 1; transform: scale(1.06); }
-  80%  { transform: scale(0.97); }
-  100% { opacity: 1; transform: scale(1); }
+  0% {
+    opacity: 0;
+    transform: scale(0.55);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.06);
+  }
+  80% {
+    transform: scale(0.97);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
-/* Floating label styling */
 .floatingLabel {
   position: fixed;
   pointer-events: none;
@@ -126,6 +130,7 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(4px);
   line-height: 1;
+  width: 300px;
 }
 
 .rollingText {
@@ -137,43 +142,57 @@
   letter-spacing: 0.05em;
 }
 
-/* Marquee/rolling text animation */
 @keyframes marquee {
   0% {
     transform: translateX(0);
   }
-
   100% {
     transform: translateX(-33.33%);
   }
 }
 
-/* Responsive adjustments */
+/* Mobile: big text + side-by-side cards */
 @media (max-width: 768px) {
   .heroSection {
     height: 100vh;
   }
 
   .heroTitle {
-    font-size: clamp(1.75rem, 6vw, 3.5rem);
+    /* Big mobile text: 3rem floor instead of 1.75rem */
+    font-size: clamp(3rem, 18vw, 5rem);
     padding: 0 15px;
   }
 
   .labelContent {
     padding: 1px 3px;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    width: 220px;
+  }
+
+  /* Cards wrapper: side-by-side on mobile */
+  .cardsWrapper {
+    flex-direction: row;
+    gap: 12px;
+    padding: 0 16px;
   }
 }
 
 @media (max-width: 480px) {
   .heroTitle {
-    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    /* Even larger floor for very small screens */
+    font-size: clamp(6rem, 20vw, 8rem);
     padding: 0 10px;
   }
 
   .labelContent {
     padding: 1px 2px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    width: 180px;
+  }
+
+  .cardsWrapper {
+    gap: 10px;
+    padding: 0 12px;
   }
 }
 
@@ -185,12 +204,10 @@
     transform: scale(1);
     letter-spacing: 0.02em;
   }
-
   .heroTitle {
     animation: none;
     letter-spacing: 0.02em;
   }
-
   .rollingText {
     animation: none;
   }

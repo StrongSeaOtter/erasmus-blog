@@ -25,7 +25,7 @@ Pretty much everything is within walking distance, so the first day was quite re
 The second day was mostly paperwork.  
 Anna explained the work contract to me and translated it, since everything is in French. I will be working at an IT company called GTEK, which focuses on Web Development with AI Integration. After that we went through the house rules, and then I had the rest of the day off. Of course, I used the time to go to the beach, check out the Mediterranean Sea, and spend the rest of the day there.
 
-![Beautifull Color](/img/week1/at-beach.gif)
+![Blue and green ocean](/img/week1/at-beach.gif)
 *Isn't it gorgeous here?*
 
 ---

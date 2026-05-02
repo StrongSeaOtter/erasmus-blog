@@ -9,7 +9,9 @@ const outputFile = path.join(__dirname, '../src/data/gallery.json');
 const IMAGE_REGEX = /!\[([^\]]*)\]\((\/img\/[^)]+)\)\s*\n\*([^*]+)\*/g;
 const IMAGE_NO_CAPTION_REGEX = /!\[([^\]]*)\]\((\/img\/[^)]+)\)(?!\s*\n\*)/g;
 
-// Walk directory recursively, return all .md/.mdx files
+const RESPONSIVE_SIZES = [400, 800, 1200];
+const FULL_SIZE = 2560;
+
 function getMdFiles(dir) {
   const results = [];
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -23,29 +25,32 @@ function getMdFiles(dir) {
   return results;
 }
 
-// Parse images from a single markdown file
 function parseImages(mdPath) {
   const content = fs.readFileSync(mdPath, 'utf8');
-  const found = new Map(); // src -> entry, to avoid duplicates within same file
+  const found = new Map();
 
-  // Images with captions (italic line right after)
   let match;
+  IMAGE_REGEX.lastIndex = 0;
   while ((match = IMAGE_REGEX.exec(content)) !== null) {
     const [, alt, src, description] = match;
     found.set(src, {
       src,
-      title: alt.trim() || path.basename(src, path.extname(src)).replace(/[-_]/g, ' '),
+      title:
+        alt.trim() ||
+        path.basename(src, path.extname(src)).replace(/[-_]/g, ' '),
       description: description.trim(),
     });
   }
 
-  // Images without captions (don't overwrite ones already found with caption)
+  IMAGE_NO_CAPTION_REGEX.lastIndex = 0;
   while ((match = IMAGE_NO_CAPTION_REGEX.exec(content)) !== null) {
     const [, alt, src] = match;
     if (!found.has(src)) {
       found.set(src, {
         src,
-        title: alt.trim() || path.basename(src, path.extname(src)).replace(/[-_]/g, ' '),
+        title:
+          alt.trim() ||
+          path.basename(src, path.extname(src)).replace(/[-_]/g, ' '),
       });
     }
   }
@@ -53,14 +58,82 @@ function parseImages(mdPath) {
   return [...found.values()];
 }
 
-// Load existing gallery to preserve manually edited fields
+function getVariantUrl(src, size) {
+  const ext = path.extname(src);
+  return src.replace(new RegExp(`${escapeRegExp(ext)}$`), `-${size}${ext}`);
+}
+
+function getVariantFilePath(src, size) {
+  return path.join(staticDir, getVariantUrl(src, size));
+}
+
+function escapeRegExp(str) {
+  return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+function computeScaledHeight(originalWidth, originalHeight, scaledWidth) {
+  return Math.round((originalHeight / originalWidth) * scaledWidth);
+}
+
+function computeScaledWidth(originalWidth, originalHeight, scaledHeight) {
+  return Math.round((originalWidth / originalHeight) * scaledHeight);
+}
+
+function buildResponsiveSources(src, originalWidth, originalHeight) {
+  const srcSet = [];
+
+  for (const size of RESPONSIVE_SIZES) {
+    const variantFilePath = getVariantFilePath(src, size);
+    if (!fs.existsSync(variantFilePath)) continue;
+
+    const isLandscapeOrSquare = originalWidth >= originalHeight;
+    const width = isLandscapeOrSquare
+      ? size
+      : computeScaledWidth(originalWidth, originalHeight, size);
+    const height = isLandscapeOrSquare
+      ? computeScaledHeight(originalWidth, originalHeight, size)
+      : size;
+
+    srcSet.push({
+      src: getVariantUrl(src, size),
+      width,
+      height,
+    });
+  }
+
+  const fullFilePath = getVariantFilePath(src, FULL_SIZE);
+  const full = fs.existsSync(fullFilePath) ? getVariantUrl(src, FULL_SIZE) : src;
+
+  let mainSrc = src;
+  let mainWidth = originalWidth;
+  let mainHeight = originalHeight;
+
+  if (srcSet.length > 0) {
+    const largest = [...srcSet].sort((a, b) => b.width - a.width)[0];
+    mainSrc = largest.src;
+    mainWidth = largest.width;
+    mainHeight = largest.height;
+  }
+
+  return {
+    src: mainSrc,
+    width: mainWidth,
+    height: mainHeight,
+    ...(srcSet.length > 0 ? { srcSet } : {}),
+    ...(full ? { full } : {}),
+  };
+}
+
+function getOriginalSrcKey(photo) {
+  return photo.originalSrc || photo.src;
+}
+
 let existingMap = {};
 if (fs.existsSync(outputFile)) {
   const existing = JSON.parse(fs.readFileSync(outputFile, 'utf8'));
-  existingMap = Object.fromEntries(existing.map(p => [p.src, p]));
+  existingMap = Object.fromEntries(existing.map((p) => [getOriginalSrcKey(p), p]));
 }
 
-// Collect all images from all blog markdown files, deduplicated by src
 const allImages = new Map();
 
 for (const mdFile of getMdFiles(blogDir)) {
@@ -71,32 +144,41 @@ for (const mdFile of getMdFiles(blogDir)) {
   }
 }
 
-// Build final photos array with dimensions
 const photos = [];
 
 for (const [src, img] of allImages) {
   const filePath = path.join(staticDir, src);
 
   if (!fs.existsSync(filePath)) {
-    console.warn(`⚠️  File not found, skipping: ${filePath}`);
+    console.warn(`⚠️ File not found, skipping: ${filePath}`);
     continue;
   }
 
   const buffer = fs.readFileSync(filePath);
-  const { width, height } = sizeOf(buffer);
+  const dimensions = sizeOf(buffer);
+
+  if (!dimensions.width || !dimensions.height) {
+    console.warn(`⚠️ Could not read dimensions, skipping: ${filePath}`);
+    continue;
+  }
+
+  const originalWidth = dimensions.width;
+  const originalHeight = dimensions.height;
 
   const existing = existingMap[src] || {};
+  const responsive = buildResponsiveSources(src, originalWidth, originalHeight);
 
   const entry = {
-    src,
-    width,
-    height,
-    // Prefer existing manually-edited title, then markdown alt, then filename
+    originalSrc: src,
+    src: responsive.src,
+    width: responsive.width,
+    height: responsive.height,
     title: existing.title || img.title,
-    // Prefer markdown caption, then existing, then omit
     ...(img.description || existing.description
       ? { description: img.description || existing.description }
       : {}),
+    ...(responsive.srcSet ? { srcSet: responsive.srcSet } : {}),
+    ...(responsive.full ? { full: responsive.full } : {}),
   };
 
   photos.push(entry);
@@ -106,7 +188,13 @@ fs.mkdirSync(path.dirname(outputFile), { recursive: true });
 fs.writeFileSync(outputFile, JSON.stringify(photos, null, 2));
 
 console.log(`✅ Generated gallery.json with ${photos.length} photos`);
-photos.forEach(p => {
+photos.forEach((p) => {
   const desc = p.description ? ` | "${p.description}"` : '';
-  console.log(`   ${p.src} (${p.width}x${p.height}) — "${p.title}"${desc}`);
+  const srcSetInfo = p.srcSet
+    ? ` | srcSet: [${p.srcSet.map((s) => s.width).join(', ')}]`
+    : '';
+  const fullInfo = p.full ? ` | full: ${p.full}` : '';
+  console.log(
+    `   ${p.originalSrc} -> ${p.src} (${p.width}x${p.height}) — "${p.title}"${desc}${srcSetInfo}${fullInfo}`
+  );
 });
