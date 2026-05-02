@@ -3,7 +3,6 @@ slug: week2
 title: Week 2 - The Workweek Starts Again
 authors: otti
 tags: [lifestyle, food, work]
-unlisted: true
 ---
 
 My work officially started on Tuesday, and things quickly became quite busy after a long break during Easter. Jumping straight back into work was definitely a challenge, but also exciting.
