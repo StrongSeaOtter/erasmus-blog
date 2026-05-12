@@ -3,12 +3,13 @@ slug: week3
 title: Week 3 - Juggling Projects, AI, and Life by the Sea
 authors: otti
 tags: [lifestyle, culture, work]
-unlisted: true
 ---
 
 This week has been busy once again. Even though I’ve been here for less than two weeks, I’m already working on three different projects. I’m responsible for the user interface on all of them, and I also contribute to improving the user experience to make workflows more efficient.
 <!-- truncate -->
-A big part of our work involves web development with AI integration. Since AI is such a hot topic right now and helps reduce effort in many tasks, it’s exciting to work with it. At the same time, as a software development apprentice, I sometimes can’t help but feel like I’m working on something that might replace my job in the future — but hey, that’s part of the journey 😄. In the end, web development is my passion, and I really enjoy the creative side of these projects.
+A big part of our work involves web development with AI integration. Since AI is such a hot topic right now and helps reduce effort in many tasks, it’s exciting to work with it. At the same time, as a software development apprentice, I sometimes can’t help but feel like I’m working on something that might replace my job in the future, well, that’s inevitable, I guess. But after all, web development is my passion, and I really enjoy the creative side of these projects.
+
+---
 
 ## Event with Alfmed
 
@@ -18,9 +19,13 @@ During the meeting, we were briefed on our roles as volunteers. Our job will be 
 
 The volunteer group is quite international. There’s a large group of Spanish students — still in high school — who are doing a three-month internship abroad. There are also students from Italy, and even someone who is only fifteen at the company is doing a one-month internship.  It seems like this kind of international experience is quite common here, for students that attend high school with job training programs. We’ll all be working together during the event next weekend.
 
+---
+
 ## Learning Experience
 
 Overall, the work here is good. At first i do felt a little bit overwhelmed with the amount of work, but I guess it’s very much a “learning by doing” experience. In that sense, I feel like I’ve improved a lot in just these few weeks.
+
+---
 
 ## Weekend & Beach Time
 
@@ -30,11 +35,24 @@ One great thing about this area is that Le Barcarès isn’t too crowded this ti
 
 There was also a huge biker event at the beach, complete with motor stunt shows. I checked out some really cool vintage cars, as well as lots of Harley-Davidson and Indian motorcycles.
 
+<video controls width="640">
+  <source src="/img/week3/motor-stunt-show.mp4" type="video/mp4" />
+</video>
+
+---
+
 ## Trip to Collioure
 
 On Sunday, I drove to Collioure, which was voted one of the most beautiful towns in France in 2024. It’s a charming tourist destination with colorful houses, and it has inspired many artists — including Matisse — to create beautiful works of art. The town is also famous for its anchovies, so I bought some as souvenirs and plan to use them in a few delicious meals.
 
+![Port of Collioure](/img/week3/collioure.jpg)
+*Well not the best weather but still nice*
+
 A funny moment: in the three hours I spent there, I saw at least seven different beagles. It honestly made me wonder if there was some kind of beagle gathering happening nearby.
+
+---
 
 ## Cultural Differences
 And finally — a funny cultural detail: the proper way to carry your baguette in France 😄
+
+![Baguette in car](/img/week3/baguette-in-car.jpg)

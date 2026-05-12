@@ -3,7 +3,6 @@ slug: week4
 title: Week 4 - Work, Language Barriers, and a Cyclist Marathon
 authors: otti
 tags: [culture, sport, work]
-unlisted: true
 ---
 
 ## Getting Used to Life in France
@@ -39,6 +38,9 @@ After the Alfmed group arrived, we gathered together, picked up our T-shirts, go
 
 I was assigned to the provision stand, where we prepared food for the cyclists. There were oranges and watermelon for refreshment, sliced baguette with liver paste and brioche for carbs, salted nuts and chips for electrolytes, and of course chocolate and various sweets for quick energy. Most importantly, there was plenty of water and Coca-Cola.
 
+![Watermelon for the refreshment](/img/week4/getting-ready.jpg)
+*Preparing at the food provision station*
+
 My job was to handle the drink station — refilling water and Coke. At first, it didn’t seem too difficult, especially during the quiet morning and around noon.
 
 I even had time to grab a beer and a tuna sandwich and enjoy a short lunch break by the beach.
@@ -63,7 +65,7 @@ But after about an hour, reality kicked in. My arm started to hurt, and I realiz
 
 After pouring what felt like 500 cups of Coke and water, things finally slowed down. I managed to grab some snacks and hydrate myself.
 
-Later, another group of interns showed up after spending half the day at the beach — I guess helping clean up was the least they could do 😄.
+Later, another group of interns showed up after spending half the day at the beach — I guess helping clean up was the least they could do 🙄.
 
 Eventually, I was told my shift was done, and I could finally head home.
 
@@ -73,4 +75,5 @@ Everyone in the group was incredibly nice, and even though I don’t speak Frenc
 
 Normally, I would never sign up for this kind of volunteer event, so I guess this really was a once-in-a-lifetime experience.
 
-pic of the food preparation group
+![The Food Provision Group](/img/week4/group.jpg)
+*The food provision group at the cycling event*

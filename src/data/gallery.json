@@ -151,5 +151,40 @@
     "title": "Bouillabaisse served with rouille and baguette",
     "description": "Rouille is a saffron- and chili-flavored mayonnaise, which is traditionally served with bouillabaisse. It is used to flavor the soup and add richness and depth of flavor.",
     "full": "/img/week2/serve-with-baguette-1200.jpg"
+  },
+  {
+    "originalSrc": "/img/week3/collioure.jpg",
+    "src": "/img/week3/collioure.jpg",
+    "width": 3949,
+    "height": 2901,
+    "title": "Port of Collioure",
+    "description": "Well not the best weather but still nice",
+    "full": "/img/week3/collioure.jpg"
+  },
+  {
+    "originalSrc": "/img/week3/baguette-in-car.jpg",
+    "src": "/img/week3/baguette-in-car.jpg",
+    "width": 2949,
+    "height": 3562,
+    "title": "Baguette in car",
+    "full": "/img/week3/baguette-in-car.jpg"
+  },
+  {
+    "originalSrc": "/img/week4/getting-ready.jpg",
+    "src": "/img/week4/getting-ready.jpg",
+    "width": 4032,
+    "height": 3024,
+    "title": "Watermelon for the refreshment",
+    "description": "Preparing at the food provision station",
+    "full": "/img/week4/getting-ready.jpg"
+  },
+  {
+    "originalSrc": "/img/week4/group.jpg",
+    "src": "/img/week4/group.jpg",
+    "width": 900,
+    "height": 1600,
+    "title": "The Food Provision Group",
+    "description": "The food provision group at the cycling event",
+    "full": "/img/week4/group.jpg"
   }
 ]
