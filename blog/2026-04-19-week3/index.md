@@ -19,8 +19,6 @@ During the meeting, we were briefed on our roles as volunteers. Our job will be 
 
 The volunteer group is quite international. There’s a large group of Spanish students — still in high school — who are doing a three-month internship abroad. There are also students from Italy, and even someone who is only fifteen at the company is doing a one-month internship.  It seems like this kind of international experience is quite common here, for students that attend high school with job training programs. We’ll all be working together during the event next weekend.
 
----
-
 ## Learning Experience
 
 Overall, the work here is good. At first i do felt a little bit overwhelmed with the amount of work, but I guess it’s very much a “learning by doing” experience. In that sense, I feel like I’ve improved a lot in just these few weeks.
