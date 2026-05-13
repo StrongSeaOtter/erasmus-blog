@@ -33,6 +33,9 @@ One great thing about this area is that Le Barcarès isn’t too crowded this ti
 
 There was also a huge biker event at the beach, complete with motor stunt shows. I checked out some really cool vintage cars, as well as lots of Harley-Davidson and Indian motorcycles.
 
+<video controls width="640">
+  <source src="/img/week3/motor-stunt-show.mp4" type="video/mp4" />
+</video>
 
 ---
 
