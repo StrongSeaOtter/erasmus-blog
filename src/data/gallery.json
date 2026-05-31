@@ -154,37 +154,426 @@
   },
   {
     "originalSrc": "/img/week3/collioure.jpg",
-    "src": "/img/week3/collioure.jpg",
-    "width": 3949,
-    "height": 2901,
+    "src": "/img/week3/collioure-1200.jpg",
+    "width": 1200,
+    "height": 882,
     "title": "Port of Collioure",
     "description": "Well not the best weather but still nice",
-    "full": "/img/week3/collioure.jpg"
+    "srcSet": [
+      {
+        "src": "/img/week3/collioure-400.jpg",
+        "width": 400,
+        "height": 294
+      },
+      {
+        "src": "/img/week3/collioure-800.jpg",
+        "width": 800,
+        "height": 588
+      },
+      {
+        "src": "/img/week3/collioure-1200.jpg",
+        "width": 1200,
+        "height": 882
+      }
+    ],
+    "full": "/img/week3/collioure-2560.jpg"
   },
   {
     "originalSrc": "/img/week3/baguette-in-car.jpg",
-    "src": "/img/week3/baguette-in-car.jpg",
-    "width": 2949,
-    "height": 3562,
+    "src": "/img/week3/baguette-in-car-1200.jpg",
+    "width": 993,
+    "height": 1200,
     "title": "Baguette in car",
-    "full": "/img/week3/baguette-in-car.jpg"
+    "srcSet": [
+      {
+        "src": "/img/week3/baguette-in-car-400.jpg",
+        "width": 331,
+        "height": 400
+      },
+      {
+        "src": "/img/week3/baguette-in-car-800.jpg",
+        "width": 662,
+        "height": 800
+      },
+      {
+        "src": "/img/week3/baguette-in-car-1200.jpg",
+        "width": 993,
+        "height": 1200
+      }
+    ],
+    "full": "/img/week3/baguette-in-car-2560.jpg"
   },
   {
     "originalSrc": "/img/week4/getting-ready.jpg",
-    "src": "/img/week4/getting-ready.jpg",
-    "width": 4032,
-    "height": 3024,
+    "src": "/img/week4/getting-ready-1200.jpg",
+    "width": 1200,
+    "height": 900,
     "title": "Watermelon for the refreshment",
     "description": "Preparing at the food provision station",
-    "full": "/img/week4/getting-ready.jpg"
+    "srcSet": [
+      {
+        "src": "/img/week4/getting-ready-400.jpg",
+        "width": 400,
+        "height": 300
+      },
+      {
+        "src": "/img/week4/getting-ready-800.jpg",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "src": "/img/week4/getting-ready-1200.jpg",
+        "width": 1200,
+        "height": 900
+      }
+    ],
+    "full": "/img/week4/getting-ready-2560.jpg"
   },
   {
     "originalSrc": "/img/week4/group.jpg",
-    "src": "/img/week4/group.jpg",
-    "width": 900,
-    "height": 1600,
+    "src": "/img/week4/group-1200.jpg",
+    "width": 675,
+    "height": 1200,
     "title": "The Food Provision Group",
     "description": "The food provision group at the cycling event",
+    "srcSet": [
+      {
+        "src": "/img/week4/group-400.jpg",
+        "width": 225,
+        "height": 400
+      },
+      {
+        "src": "/img/week4/group-800.jpg",
+        "width": 450,
+        "height": 800
+      },
+      {
+        "src": "/img/week4/group-1200.jpg",
+        "width": 675,
+        "height": 1200
+      }
+    ],
     "full": "/img/week4/group.jpg"
+  },
+  {
+    "originalSrc": "/img/week5/windsurf.jpg",
+    "src": "/img/week5/windsurf-1200.jpg",
+    "width": 900,
+    "height": 1200,
+    "title": "Windsurfing",
+    "description": "Windsurfing in the Étang de Leucate",
+    "srcSet": [
+      {
+        "src": "/img/week5/windsurf-400.jpg",
+        "width": 300,
+        "height": 400
+      },
+      {
+        "src": "/img/week5/windsurf-800.jpg",
+        "width": 600,
+        "height": 800
+      },
+      {
+        "src": "/img/week5/windsurf-1200.jpg",
+        "width": 900,
+        "height": 1200
+      }
+    ],
+    "full": "/img/week5/windsurf-2560.jpg"
+  },
+  {
+    "originalSrc": "/img/week6/sagrada-familia.png",
+    "src": "/img/week6/sagrada-familia-1200.png",
+    "width": 878,
+    "height": 1200,
+    "title": "Sagrada Família",
+    "description": "Well… they’re still not quite done yet.",
+    "srcSet": [
+      {
+        "src": "/img/week6/sagrada-familia-400.png",
+        "width": 293,
+        "height": 400
+      },
+      {
+        "src": "/img/week6/sagrada-familia-800.png",
+        "width": 586,
+        "height": 800
+      },
+      {
+        "src": "/img/week6/sagrada-familia-1200.png",
+        "width": 878,
+        "height": 1200
+      }
+    ],
+    "full": "/img/week6/sagrada-familia-2560.png"
+  },
+  {
+    "originalSrc": "/img/week6/seafood.jpg",
+    "src": "/img/week6/seafood-1200.jpg",
+    "width": 741,
+    "height": 1200,
+    "title": "Seafood Platter",
+    "description": "Can you believe that’s only half a portion of the seafood platter?",
+    "srcSet": [
+      {
+        "src": "/img/week6/seafood-400.jpg",
+        "width": 247,
+        "height": 400
+      },
+      {
+        "src": "/img/week6/seafood-800.jpg",
+        "width": 494,
+        "height": 800
+      },
+      {
+        "src": "/img/week6/seafood-1200.jpg",
+        "width": 741,
+        "height": 1200
+      }
+    ],
+    "full": "/img/week6/seafood-2560.jpg"
+  },
+  {
+    "originalSrc": "/img/week7/cute-puppy.gif",
+    "src": "/img/week7/cute-puppy.gif",
+    "width": 720,
+    "height": 960,
+    "title": "Casa Sansa",
+    "description": "8-week-old Australian Shepherd — such a handsome boy!",
+    "full": "/img/week7/cute-puppy.gif"
+  },
+  {
+    "originalSrc": "/img/week7/casa-sansa.jpg",
+    "src": "/img/week7/casa-sansa-1200.jpg",
+    "width": 1200,
+    "height": 900,
+    "title": "Casa Sansa",
+    "description": "Since we’re right by the coast, the sailing and marine-inspired decoration style fit perfectly.",
+    "srcSet": [
+      {
+        "src": "/img/week7/casa-sansa-400.jpg",
+        "width": 400,
+        "height": 300
+      },
+      {
+        "src": "/img/week7/casa-sansa-800.jpg",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "src": "/img/week7/casa-sansa-1200.jpg",
+        "width": 1200,
+        "height": 900
+      }
+    ],
+    "full": "/img/week7/casa-sansa-2560.jpg"
+  },
+  {
+    "originalSrc": "/img/week7/carcassonne.jpg",
+    "src": "/img/week7/carcassonne-1200.jpg",
+    "width": 1200,
+    "height": 900,
+    "title": "Carcassonne",
+    "description": "Weather was pretty nice",
+    "srcSet": [
+      {
+        "src": "/img/week7/carcassonne-400.jpg",
+        "width": 400,
+        "height": 300
+      },
+      {
+        "src": "/img/week7/carcassonne-800.jpg",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "src": "/img/week7/carcassonne-1200.jpg",
+        "width": 1200,
+        "height": 900
+      }
+    ],
+    "full": "/img/week7/carcassonne-2560.jpg"
+  },
+  {
+    "originalSrc": "/img/week7/cat.jpg",
+    "src": "/img/week7/cat-1200.jpg",
+    "width": 1200,
+    "height": 900,
+    "title": "Cute cat",
+    "description": "There were actually three of them.",
+    "srcSet": [
+      {
+        "src": "/img/week7/cat-400.jpg",
+        "width": 400,
+        "height": 300
+      },
+      {
+        "src": "/img/week7/cat-800.jpg",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "src": "/img/week7/cat-1200.jpg",
+        "width": 1200,
+        "height": 900
+      }
+    ],
+    "full": "/img/week7/cat-2560.jpg"
+  },
+  {
+    "originalSrc": "/img/week7/wine-factory.jpg",
+    "src": "/img/week7/wine-factory-1200.jpg",
+    "width": 1200,
+    "height": 900,
+    "title": "Wine Factory",
+    "description": "Here is where the magic happens",
+    "srcSet": [
+      {
+        "src": "/img/week7/wine-factory-400.jpg",
+        "width": 400,
+        "height": 300
+      },
+      {
+        "src": "/img/week7/wine-factory-800.jpg",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "src": "/img/week7/wine-factory-1200.jpg",
+        "width": 1200,
+        "height": 900
+      }
+    ],
+    "full": "/img/week7/wine-factory-2560.jpg"
+  },
+  {
+    "originalSrc": "/img/week7/dali-museum.jpg",
+    "src": "/img/week7/dali-museum-1200.jpg",
+    "width": 1200,
+    "height": 900,
+    "title": "Dalí Theatre-Museum",
+    "description": "The exterior already looks incredibly Dalí-style.",
+    "srcSet": [
+      {
+        "src": "/img/week7/dali-museum-400.jpg",
+        "width": 400,
+        "height": 300
+      },
+      {
+        "src": "/img/week7/dali-museum-800.jpg",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "src": "/img/week7/dali-museum-1200.jpg",
+        "width": 1200,
+        "height": 900
+      }
+    ],
+    "full": "/img/week7/dali-museum-2560.jpg"
+  },
+  {
+    "originalSrc": "/img/week7/woman-face.jpg",
+    "src": "/img/week7/woman-face-1200.jpg",
+    "width": 1200,
+    "height": 900,
+    "title": "Face of Mae West",
+    "description": "And of course, the famous Face of Mae West Which May Be Used as an Apartment",
+    "srcSet": [
+      {
+        "src": "/img/week7/woman-face-400.jpg",
+        "width": 400,
+        "height": 300
+      },
+      {
+        "src": "/img/week7/woman-face-800.jpg",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "src": "/img/week7/woman-face-1200.jpg",
+        "width": 1200,
+        "height": 900
+      }
+    ],
+    "full": "/img/week7/woman-face-2560.jpg"
+  },
+  {
+    "originalSrc": "/img/week7/paella.jpg",
+    "src": "/img/week7/paella-1200.jpg",
+    "width": 1200,
+    "height": 900,
+    "title": "Seafood Paella",
+    "description": "Shrimp and fish paella",
+    "srcSet": [
+      {
+        "src": "/img/week7/paella-400.jpg",
+        "width": 400,
+        "height": 300
+      },
+      {
+        "src": "/img/week7/paella-800.jpg",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "src": "/img/week7/paella-1200.jpg",
+        "width": 1200,
+        "height": 900
+      }
+    ],
+    "full": "/img/week7/paella-2560.jpg"
+  },
+  {
+    "originalSrc": "/img/week7/brunch.jpg",
+    "src": "/img/week7/brunch-1200.jpg",
+    "width": 900,
+    "height": 1200,
+    "title": "Black Bear",
+    "description": "I am going to miss this so much",
+    "srcSet": [
+      {
+        "src": "/img/week7/brunch-400.jpg",
+        "width": 300,
+        "height": 400
+      },
+      {
+        "src": "/img/week7/brunch-800.jpg",
+        "width": 600,
+        "height": 800
+      },
+      {
+        "src": "/img/week7/brunch-1200.jpg",
+        "width": 900,
+        "height": 1200
+      }
+    ],
+    "full": "/img/week7/brunch-2560.jpg"
+  },
+  {
+    "originalSrc": "/img/week7/bear.jpg",
+    "src": "/img/week7/bear-1200.jpg",
+    "width": 1200,
+    "height": 900,
+    "title": "Black Bear",
+    "description": "Hi Bear",
+    "srcSet": [
+      {
+        "src": "/img/week7/bear-400.jpg",
+        "width": 400,
+        "height": 300
+      },
+      {
+        "src": "/img/week7/bear-800.jpg",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "src": "/img/week7/bear-1200.jpg",
+        "width": 1200,
+        "height": 900
+      }
+    ],
+    "full": "/img/week7/bear-2560.jpg"
   }
 ]

@@ -1,9 +1,8 @@
 ---
 slug: week5
-title: Week 5
+title: Week 5 - Wind, Water, and New Challenges
 authors: otti
-tags: [Food, Travel, Work]
-unlisted: true
+tags: [lifestyle, sports, work]
 ---
 
 May is really a great month because there are so many public holidays, which basically turns every week into a four-day workweek. I’m still mainly focused on creating different demos for different projects. One of the applications is a dashboard-style web app that demonstrates automation observability and human-in-the-loop workflow resolution in the healthcare industry. Another project is quite similar, but targeted toward public service work such as repairs, installations, and plumbing. There is also an AI-powered support QA platform and a commercial intelligence platform for fruit and vegetable distributors. I’m guessing most of these demos are intended for local businesses since they are all very region-specific.
@@ -29,6 +28,9 @@ Then he taught me the correct standing position. The key is to keep your knees s
 
 One very important thing I learned early was how to pull up the sail correctly. Instead of using arm strength, you should lean back slightly and use your body weight and gravity to lift the sail — otherwise your arms get exhausted immediately.
 
+![Windsurfing](/img/week5/windsurf-1200.jpg)
+*Windsurfing in the Étang de Leucate*
+
 For beginners, the first goal is not speed, but balance and controlling the direction. You start by slowly steering the sail to catch the wind. Pulling the sail closer to your body makes the board move faster, while opening the sail reduces power and slows you down. Small movements already make a huge difference.
 
 At first I was a bit overwhelmed and panicked slightly because of the balancing, but once I started getting the hang of it, it became incredibly fun. Alan also explained how important the sail angle is relative to the wind. You should never position the sail completely against the wind, otherwise you can easily drift far away and spend the rest of the day paddling back to shore.
@@ -44,6 +46,10 @@ And somehow, right after that, everything started clicking.
 On my next turn, I did it perfectly and suddenly I was riding the wind smoothly all the way toward the other shore. Alan cheered for me and shouted that now it was time to relax, sing, and just enjoy the breeze.
 
 I was honestly so proud of myself.
+
+<video controls width="640">
+  <source src="/img/week5/windsurf.mp4" type="video/mp4" />
+</video>
 
 ---
 
@@ -61,8 +67,10 @@ Apparently, trying a sport like this really boosts your adrenaline, and I still 
 
 The entire weekend had perfect weather for wind sports, so I also drove to one of the windiest spots in France to watch the experienced windsurfers and kitesurfers there.
 
-Video of people surfing.
+<video controls width="640">
+  <source src="/img/week5/windsurf-in-sea.mp4" type="video/mp4" />
+</video>
 
-*Pretty cool, huh?*
+*Pretty cool, huh?* 
 
 On the drive back, I even spotted the mini van of windsurfing world champion Antoine Albeau. I think he was probably there for training too.

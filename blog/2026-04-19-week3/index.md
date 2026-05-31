@@ -43,7 +43,7 @@ There was also a huge biker event at the beach, complete with motor stunt shows.
 
 On Sunday, I drove to Collioure, which was voted one of the most beautiful towns in France in 2024. It’s a charming tourist destination with colorful houses, and it has inspired many artists — including Matisse — to create beautiful works of art. The town is also famous for its anchovies, so I bought some as souvenirs and plan to use them in a few delicious meals.
 
-![Port of Collioure](/img/week3/collioure.jpg)
+![Port of Collioure](/img/week3/collioure-1200.jpg)
 *Well not the best weather but still nice*
 
 A funny moment: in the three hours I spent there, I saw at least seven different beagles. It honestly made me wonder if there was some kind of beagle gathering happening nearby.
@@ -53,4 +53,4 @@ A funny moment: in the three hours I spent there, I saw at least seven different
 ## Cultural Differences
 And finally — a funny cultural detail: the proper way to carry your baguette in France 😄
 
-![Baguette in car](/img/week3/baguette-in-car.jpg)
+![Baguette in car](/img/week3/baguette-in-car-1200.jpg)

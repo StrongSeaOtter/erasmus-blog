@@ -38,7 +38,7 @@ After the Alfmed group arrived, we gathered together, picked up our T-shirts, go
 
 I was assigned to the provision stand, where we prepared food for the cyclists. There were oranges and watermelon for refreshment, sliced baguette with liver paste and brioche for carbs, salted nuts and chips for electrolytes, and of course chocolate and various sweets for quick energy. Most importantly, there was plenty of water and Coca-Cola.
 
-![Watermelon for the refreshment](/img/week4/getting-ready.jpg)
+![Watermelon for the refreshment](/img/week4/getting-ready-1200.jpg)
 *Preparing at the food provision station*
 
 My job was to handle the drink station — refilling water and Coke. At first, it didn’t seem too difficult, especially during the quiet morning and around noon.
@@ -75,5 +75,5 @@ Everyone in the group was incredibly nice, and even though I don’t speak Frenc
 
 Normally, I would never sign up for this kind of volunteer event, so I guess this really was a once-in-a-lifetime experience.
 
-![The Food Provision Group](/img/week4/group.jpg)
+![The Food Provision Group](/img/week4/group-1200.jpg)
 *The food provision group at the cycling event*
