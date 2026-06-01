@@ -2,7 +2,7 @@
 slug: week4
 title: Week 4 - Work, Language Barriers, and a Cyclist Marathon
 authors: otti
-tags: [culture, sport, work]
+tags: [culture, sports, work]
 ---
 
 ## Getting Used to Life in France
